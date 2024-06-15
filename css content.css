@@ -1,0 +1,163 @@
+*{ /* * mark here is universal selector */
+    box-sizing: border-box;/* default value for box sizing is content-box, it is difficult to maintain
+    sizes in it.
+     */
+
+}
+body{/* body here is a tag selector */
+margin: 0;
+padding: 0;
+font-size: 16px;/* always unit and value should not have space in between eq: 16px. 16 px is wrong */
+/* by default margin and padding will be added by user agent style sheet, we are setting the values
+ to 0 here */
+}
+.toolbox-cont{/* here . mark is class followed by class name */
+height: 5rem; /* rem is respective to default value of root, as toolbox cont root is body, so body's size
+is maintained as 16px, so here height will be 80px */
+background-color: rgb(90, 84, 84);
+display: flex;/* display flex should always be added to parent, if we 
+want childrens to be aligned */
+align-items: center;
+}
+.toolbox-cont > *{/* this tag is to select all children inside 
+    toolbox-cont */
+    margin-left: 4rem;
+}
+.toolbox-priority-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3.5rem;
+    width: 18rem;
+    background-color: aquamarine;
+}
+.toolbox-priority-cont > *:hover{/* here :hover is called pseudo style */
+background-color: bisque;
+}
+.size{
+    height: 2.5rem;
+    width: 3rem;
+}
+.lightpink{
+    background-color: darkmagenta;
+}
+.lightgreen{
+    background-color: rgb(3, 53, 36);
+}
+.lightblue{
+    background-color: blue;
+}
+.black{
+    background-color: rgb(51, 2, 2);
+}
+.action-btn-cont{
+    display: flex;
+    background-color: aquamarine;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+.action-btn-cont > *{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: azure;
+   width: 50%;/* here % depends on parent value, in this case
+   depends on action-btn-cont */
+   cursor: pointer;
+   border-left: 2px;
+}
+.action-btn-cont > *:hover{
+   background-color: burlywood;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: rgb(241, 238, 238);
+    position: relative;
+    border-radius: 10px ;
+    
+}
+.ticket-color{
+    height: 1rem;
+    /* background-color: rgb(88, 71, 71); */
+}
+.ticket-id{
+    background-color: rgb(223, 226, 43)
+}
+.ticket-lock{
+    display: flex;
+    position: absolute; /* position is maintained 
+    absolute relative to parent container.
+    in this case .ticket-cont is parent, so position
+    has to be relative maintained */
+    bottom: 1px;
+    right: 1px;
+    height: 2rem;
+    width: 2rem;
+}
+.ticket-lock:hover{
+    /* cursor: grab; */
+    border: 2px solid black;
+}
+.modal-cont{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background-color: rgb(244, 151, 12);
+    width: 14rem;
+    height: 14rem;
+    /* display: flex; */
+    display: none;
+}
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    background-color: aliceblue;
+    color: black;
+    font-size: 14px;
+    resize: none;
+}
+.priority-color-cont{
+    display: flex;
+    height: 100%;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.priority-color-cont>*:hover{
+background-color: blanchedalmond;
+cursor: pointer;
+}
+.active{
+    border: 3px solid #0c0c0b;
+}
+.main>*:hover{
+    cursor: pointer;
+    /* border: 5px solid #4106f4; */
+}
+.task-area{
+    height: 150px;
+    width: 230px;
+}
+.save{
+    /* display: flex; */
+    height: 1.5rem;
+    width: 2.7rem;
+    background-color: whitesmoke;
+}
+.save:hover{
+    cursor: pointer;
+    background-color:burlywood ;
+}
+
+

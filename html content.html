@@ -1,0 +1,65 @@
+<!-- ctrl+/ to comment full line -->
+<!-- shft+alt+A to inline comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- below link is add to link external css file to this html -->
+    <link rel = 'stylesheet' href = 'css content.css'> 
+</head>
+<body>
+    <div class = 'toolbox-cont'>
+        <div class = 'toolbox-priority-cont'>
+            <div class = 'prio size lightpink'></div>
+            <div class = 'prio size lightgreen'></div>
+            <div class = 'prio size lightblue'></div>
+            <div class = 'prio size black'></div>
+        </div>
+        <div class = 'action-btn-cont'>
+            <!-- for our buttons we can add plus and cross mark images, but better approach is to use -->
+            <!-- icons instead of images. -->
+            <!-- to have icons, lets use foot awesome website, first we have to create script as below -->
+            
+            <div class = 'add-btn'>
+                <!-- below icon tag is add with classes mention in icon in font awesome -->
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class = 'remove-btn'>
+                <!-- below icon tag is add with classes mention in icon in font awesome -->
+                <i class="fa-solid fa-minus"></i>
+            </div>
+        </div>
+        <div class = 'save'>  Save</div>
+    </div>
+    <main class = 'main'>
+        <!-- <div class = 'ticket-cont'>
+            <div class = 'ticket-color'></div>
+            <div class = 'ticket-id'>808</div>
+            //-- <div class="task-area"> this is text area</div> -->
+            <!-- <textarea class="task-area"> </textarea>
+            <div class="ticket-lock">
+                <i class = 'fa-solid fa-lock' style="width: 100%;"></i>
+            </div>
+        </div> -->
+    </main>
+    <div class="modal-cont">
+        <textarea class="textarea-cont"></textarea><!-- here
+        by giving textarea instead of div, it will allow us to type -->
+        <div class="priority-color-cont">
+            <div class="size lightpink active"></div>
+            <div class="size lightgreen"></div>
+            <div class="size lightblue"></div>
+            <div class="size black"></div>
+        </div>
+    </div>
+    
+    <!-- if we have multiple scripts, then external script( ex: font awesome script) 
+    has to come first
+    then internal script -->
+    <script src="https://kit.fontawesome.com/303fa07f88.js"
+    crossorigin="anonymous"></script>
+    <script src="script content.js"></script>
+</body>
+</html>
